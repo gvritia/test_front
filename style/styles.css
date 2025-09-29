@@ -237,21 +237,31 @@ main.content {
 /* ===== ТОВАРЫ ===== */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Фиксированное количество колонок - 3 */
+    grid-template-columns: repeat(3, 1fr);
+    /* Отступы между карточками */
     gap: 30px;
+    /* Отступ сверху */
     margin-top: 30px;
 }
 
 .product-card {
+    /* Белый фон карточки */
     background: white;
+    /* Внутренние отступы карточки */
     padding: 25px;
+    /* Закругленные углы */
     border-radius: 15px;
+    /* Выравнивание текста по центру */
     text-align: center;
+    /* Тень карточки */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    /* Плавный переход для анимаций */
     transition: transform 0.3s ease;
 }
 
 .product-card:hover {
+    /* Эффект поднятия карточки при наведении */
     transform: translateY(-5px);
 }
 
