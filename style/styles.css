@@ -709,3 +709,18 @@ dialog {
         width: 100%;
     }
 }
+
+/* Sticky footer с flexbox */
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1; /* Main растягивается, чтобы заполнить пространство */
+}
+
+/* Если нужно, убедись, что footer не растягивается */
+.footer {
+    flex-shrink: 0; /* Footer остаётся фиксированной высоты */
+}
