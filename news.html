@@ -3,51 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости</title>
+    <title>Новости - Портфолио</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-<div class="page-container">
+<!-- Основной контейнер -->
+<div class="page">
+
+    <!-- Шапка -->
     <header class="header">
-        <h1>Хэдер</h1>
+        <h1 class="header__title">Моё портфолио</h1>
     </header>
 
+    <!-- Навигация -->
     <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item nav__item--active">
+                <a class="nav__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="practices.html">Практика</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="goods.html">Продукты</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
         </ul>
     </nav>
 
-    <main class="content">
-        <section class="news-container">
-            <div class="news-card">
-                <h2 class="news-title">Невероятная вечеринка</h2>
-                <p class="news-meta">23.06.2025 12:00 P.Diddy</p>
-                <p class="news-text">В Риге устраивают вечеринку в честь дня независимости Колумбии</p>
-            </div>
+    <!-- Основной контент -->
+    <main class="main">
 
-            <div class="news-card">
-                <h2 class="news-title">Албанская мафия в Саратове!</h2>
-                <p class="news-meta">11.04.2025 22:00 Шкрипер Пингвинович</p>
-                <p class="news-text">Албанская мафия переехала жить в Саратов, не выдержав Конкуренции с Walter
-                    White </p>
-            </div>
+        <!-- Блок новостей -->
+        <section class="news">
+            <h2 class="news__title">Последние новости</h2>
+            <div class="news__list">
+                <article class="news-item">
+                    <h3 class="news-item__title">Невероятная вечеринка</h3>
+                    <div class="news-item__date">23.06.2025 12:00 P.Diddy</div>
+                    <p class="news-item__text">В Риге устраивают вечеринку в честь дня независимости Колумбии</p>
+                </article>
 
-            <div class="news-card">
-                <h2 class="news-title">Ураган Бэлла</h2>
-                <p class="news-meta">11.09.2001 12:00 Дональд Трапмович</p>
-                <p class="news-text">Ураган Бэлла надвигается на Маями, правительство США срочно эвакуирует
-                    гражданских</p>
+                <article class="news-item">
+                    <h3 class="news-item__title">Албанская мафия в Саратове!</h3>
+                    <div class="news-item__date">11.04.2025 22:00 Шкрипер Пингвинович</div>
+                    <p class="news-item__text">Албанская мафия переехала жить в Саратов, не выдержав Конкуренции с Walter White</p>
+                </article>
+
+                <article class="news-item">
+                    <h3 class="news-item__title">Ураган Бэлла</h3>
+                    <div class="news-item__date">11.09.2001 12:00 Дональд Трапмович</div>
+                    <p class="news-item__text">Ураган Бэлла надвигается на Маями, правительство США срочно эвакуирует гражданских</p>
+                </article>
             </div>
         </section>
+
     </main>
 
+    <!-- Подвал -->
     <footer class="footer">
-        <p>Футер</p>
+        <p class="footer__text">&copy; 2025 Мой сайт</p>
     </footer>
 </div>
 </body>

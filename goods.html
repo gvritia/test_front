@@ -3,68 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товары</title>
+    <title>Продукты - Портфолио</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-<div class="page-container">
+<!-- Основной контейнер -->
+<div class="page">
+
+    <!-- Шапка -->
     <header class="header">
-        <h1>Хэдер</h1>
+        <h1 class="header__title">Моё портфолио</h1>
     </header>
 
+    <!-- Навигация -->
     <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="practices.html">Практика</a>
+            </li>
+            <li class="nav__item nav__item--active">
+                <a class="nav__link" href="goods.html">Продукты</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
         </ul>
     </nav>
 
-    <main class="content">
-        <h2 class="section-title">Наши товары</h2>
-        <section class="products-grid">
-            <div class="product-card">
-                <img class="product-image" src="images/france.jpg" alt="Фото товара 1">
-                <h3 class="product-name">Сборная Франции</h3>
-                <p class="product-price">1.200.000.000$</p>
-            </div>
+    <!-- Основной контент -->
+    <main class="main">
 
-            <div class="product-card">
-                <img class="product-image" src="images/bigmac.webp" alt="Фото товара 2">
-                <h3 class="product-name">Американский бургер</h3>
-                <p class="product-price">15$</p>
-            </div>
+        <!-- Продукты -->
+        <section class="projects">
+            <h2 class="projects__title">Наши продукты</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <img class="profile__photo" src="images/france.jpg" alt="Сборная Франции">
+                    <h3 class="project-card__title">Сборная Франции</h3>
+                    <p class="project-card__desc">1.200.000.000$</p>
+                </div>
 
-            <div class="product-card">
-                <img class="product-image" src="images/mirea.jpg" alt="Фото товара 3">
-                <h3 class="product-name">РТУ МИРЭА</h3>
-                <p class="product-price">450.000.000$</p>
-            </div>
+                <div class="project-card">
+                    <img class="profile__photo" src="images/bigmac.webp" alt="Американский бургер">
+                    <h3 class="project-card__title">Американский бургер</h3>
+                    <p class="project-card__desc">6.49$</p>
+                </div>
 
-            <div class="product-card">
-                <img class="product-image" src="images/france.jpg" alt="Фото товара 1">
-                <h3 class="product-name">Сборная Франции</h3>
-                <p class="product-price">1.200.000.000$</p>
-            </div>
+                <div class="project-card">
+                    <img class="profile__photo" src="images/mirea.jpg" alt="РТУ МИРЭА">
+                    <h3 class="project-card__title">РТУ МИРЭА</h3>
+                    <p class="project-card__desc">350.000.000$</p>
+                </div>
 
-            <div class="product-card">
-                <img class="product-image" src="images/bigmac.webp" alt="Фото товара 2">
-                <h3 class="product-name">Американский бургер</h3>
-                <p class="product-price">15$</p>
-            </div>
+                <div class="project-card">
+                    <img class="profile__photo" src="images/france.jpg" alt="Сборная Франции">
+                    <h3 class="project-card__title">Сборная Франции</h3>
+                    <p class="project-card__desc">1.200.000.000$</p>
+                </div>
 
-            <div class="product-card">
-                <img class="product-image" src="images/mirea.jpg" alt="Фото товара 3">
-                <h3 class="product-name">РТУ МИРЭА</h3>
-                <p class="product-price">450.000.000$</p>
+                <div class="project-card">
+                    <img class="profile__photo" src="images/bigmac.webp" alt="Американский бургер">
+                    <h3 class="project-card__title">Американский бургер</h3>
+                    <p class="project-card__desc">6.49$</p>
+                </div>
+
+                <div class="project-card">
+                    <img class="profile__photo" src="images/mirea.jpg" alt="РТУ МИРЭА">
+                    <h3 class="project-card__title">РТУ МИРЭА</h3>
+                    <p class="project-card__desc">350.000.000$</p>
+                </div>
             </div>
         </section>
+
     </main>
 
+    <!-- Подвал -->
     <footer class="footer">
-        <p>Футер</p>
+        <p class="footer__text">&copy; 2025 Мой сайт</p>
     </footer>
 </div>
 </body>

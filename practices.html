@@ -3,31 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styles.css"/>
-    <title>Практики</title>
+    <title>Практика - Портфолио</title>
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-<div class="page-container">
+<!-- Основной контейнер -->
+<div class="page">
+
+    <!-- Шапка -->
     <header class="header">
-        <h1>Хэдер</h1>
+        <h1 class="header__title">Моё портфолио</h1>
     </header>
 
+    <!-- Навигация -->
     <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav__item nav__item--active">
+                <a class="nav__link" href="practices.html">Практика</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="goods.html">Продукты</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
         </ul>
     </nav>
 
-    <main id="content">
-        <p>Страница практик находится в разработке.</p>
+    <!-- Основной контент -->
+    <main class="main">
+
+        <!-- Практика -->
+        <section class="about">
+            <h2 class="about__title">Практические работы</h2>
+            <div class="about__content">
+                <p class="about__text">
+                    На этой странице будут представлены мои практические работы и проекты.
+                </p>
+            </div>
+        </section>
+
+        <!-- Проекты практики -->
+        <section class="projects">
+            <h2 class="projects__title">Мои практические проекты</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <h3 class="project-card__title">Веб-приложение</h3>
+                    <p class="project-card__desc">Разработка полнофункционального веб-приложения</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-card__title">Мобильное приложение</h3>
+                    <p class="project-card__desc">Создание кроссплатформенного мобильного приложения</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-card__title">База данных</h3>
+                    <p class="project-card__desc">Проектирование и реализация реляционной базы данных</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Подвал -->
     <footer class="footer">
-        <p>Футер</p>
+        <p class="footer__text">&copy; 2025 Мой сайт</p>
     </footer>
 </div>
 </body>
