@@ -1,4 +1,3 @@
-
 /* CSS переменные */
 :root {
     --color-main: #2c3e50;
@@ -23,6 +22,132 @@
     --color-news-meta: #95a5a6;
     --color-danger: #e74c3c;
 }
+
+
+/* Тёмная тема: переопределяем переменные */
+body.dark-theme {
+    --color-main: #1a1a1a; /* Более чёрный для меню */
+    --color-accent: #0d0d0d; /* Более чёрный акцент */
+    --color-light: #121212; /* Очень тёмный чёрный фон */
+    --color-dark: #171717; /* Градиент с чёрными тонами для header */
+    --color-text: #ffffff; /* Белый текст для максимальной видимости */
+    --color-white: #1c1c1c; /* Чёрный для блоков */
+
+    --gradient-main: linear-gradient(135deg, #1c1c1c 0%, #121212 100%);
+    --gradient-accent: linear-gradient(135deg, #333333 0%, #1a1a1a 100%); /* Более чёрные тона */
+    --gradient-light: linear-gradient(135deg, #121212 0%, #1c1c1c 100%);
+    --gradient-skill: linear-gradient(135deg, #004d4d 0%, #002929 100%); /* Тёмные чёрно-зелёные для навыков */
+    --color-news-meta: #d0d0d0; /* Светлее серый для мета */
+    --color-danger: #ff0000; /* Ярче красный для danger, чтобы был видим */
+
+    --shadow: 0 2px 5px rgba(0,0,0,0.5); /* Более тёмная тень с чёрным */
+}
+
+body.dark-theme .header {
+    background: var(--color-dark);
+    color: var(--color-text); /* Убедимся, что текст в header видим */
+}
+
+body.dark-theme .nav {
+    background: var(--color-main);
+}
+
+body.dark-theme .nav__link {
+    color: var(--color-text); /* Светлый текст для ссылок */
+}
+
+body.dark-theme .nav__link:hover {
+    background: var(--color-accent);
+    color: var(--color-text);
+}
+
+body.dark-theme .profile__card,
+body.dark-theme .about,
+body.dark-theme .news,
+body.dark-theme .contacts,
+body.dark-theme .project-card,
+body.dark-theme .news-item,
+body.dark-theme .contact-item {
+    background: var(--color-light);
+    color: var(--color-text); /* Светлый текст для всех блоков */
+}
+
+body.dark-theme .profile__name {
+    color: var(--color-text); /* Переопределение для имени */
+}
+
+body.dark-theme .profile__group {
+    color: #add8e6; /* Светлый акцент для группы, чтобы был видим */
+}
+
+body.dark-theme .about__title,
+body.dark-theme .skills__title,
+body.dark-theme .projects__title,
+body.dark-theme .news__title,
+body.dark-theme .contacts__title,
+body.dark-theme .project-card__title,
+body.dark-theme .news-item__title,
+body.dark-theme .contact-item__title {
+    color: var(--color-text); /* Светлый для всех заголовков */
+}
+
+body.dark-theme .project-card__desc,
+body.dark-theme .news-item__text,
+body.dark-theme .about__text {
+    color: #e0e0e0; /* Светло-серый для описаний, чтобы был видим на тёмном фоне */
+}
+
+body.dark-theme .news-item__date {
+    color: #add8e6; /* Светлый для даты */
+}
+
+body.dark-theme .contact-item__value {
+    color: #add8e6; /* Светлый для значений контактов */
+}
+
+body.dark-theme .skill {
+    color: var(--color-text); /* Светлый текст для навыков */
+}
+
+body.dark-theme .skill--html {
+    background: #a52a2a; /* Темнее для HTML в тёмной теме */
+}
+
+body.dark-theme .skill--css {
+    background: #1e3a8a; /* Темнее для CSS */
+}
+
+body.dark-theme .skill--js {
+    background: #a16207; /* Темнее для JS, и текст светлый */
+    color: var(--color-text);
+}
+
+body.dark-theme .footer {
+    background: var(--color-dark);
+    color: var(--color-text);
+}
+
+.theme-toggle__button {
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: var(--space-sm);
+    transition: background 0.3s;
+}
+
+.theme-toggle__button:hover {
+    background: #0a0a0a; /* Чёрный hover */
+}
+
+body.dark-theme .theme-toggle__button {
+    background: var(--color-accent);
+    color: var(--color-text);
+}
+
 
 /* Базовые стили */
 * {
